@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Для Даши</title>
+</head>
+    <div class="main">
+        <div class="closed" id="oops">
+            <img src="w480.jpg" style="width: 80%; display: flex; margin: 0 auto;">
+        </div>
+        <h1>
+            Для тебя, Даша
+        </h1>
+        <div class="for-btn" id="tap">
+            <h2>
+                Нажми на сердечко)
+            </h2>
+            <button id="open">
+                <h3>
+                    &#10084;
+                </h3>
+            </button>
+        </div>
+        <h2 id="stih" class="closed">
+            Твоею утонченностью вдохновленный<br>
+            Пишу я этот стих воодушевлённый<br><br>
+
+            Будто неведомый цветок<br>
+            Предстала во мраке скучной жизни.<br>
+            Лишь взгляд, по телу холодок.<br>
+            Встречал ли дня того сюрпризней?<br><br>
+                
+            Отвечу "Нет"! <br>
+            Когда вы вместе, чувств капна. <br> 
+            От тебя я, Даша, без ума! <br>
+        </h2>
+    </div>
+
+    <script>
+        const buttonOpen = document.getElementById("open");
+        const oops = document.getElementById("oops");
+        const btn = document.getElementById("tap");
+        const stih = document.getElementById("stih");
+        buttonOpen.addEventListener("click", function(){
+            oops.classList.toggle("closed");
+            btn.classList.toggle("closed");
+            stih.classList.toggle("closed");
+        })
+    </script>
+</body>
+</html>
